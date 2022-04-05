@@ -1,16 +1,25 @@
 package com.exercises.java;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter number");
+        int n = input.nextInt();
+        displayPattern(n);
+
+
+
     }
-
-    public static void displayPattern(int n){
-
-        for (int i = 0; i <n ; i++) {
-
-
+    public static void displayPattern(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++)
+                System.out.print(j + " ");
+            System.out.println();
         }
     }
+
+
 }
